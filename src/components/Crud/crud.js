@@ -232,6 +232,7 @@ function CRUD(options) {
      */
     submitCU() {
       if (!callVmHook(crud, CRUD.HOOK.beforeValidateCU)) {
+        debugger
         return
       }
       crud.findVM('form').$refs['form'].validate(valid => {

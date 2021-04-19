@@ -107,6 +107,7 @@ export default {
         code: ''
       }
     },
+   // 登录按钮触发事件
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
         const user = {
